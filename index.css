@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme inline {
+  --radius-sm: 0.3rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Coastal Chic Palette */
+  /* Sand / Off-white Backgrounds */
+  --color-background: hsl(40 20% 98%);
+  --color-foreground: hsl(200 15% 30%); /* Dark slate for text */
+
+  /* Cards - Clean White */
+  --color-card: hsl(0 0% 100%);
+  --color-card-foreground: hsl(200 15% 30%);
+
+  /* Popovers */
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(200 15% 30%);
+
+  /* Primary - Muted Seafoam/Teal */
+  --color-primary: hsl(175 35% 45%);
+  --color-primary-foreground: hsl(0 0% 100%);
+
+  /* Secondary - Soft Blue/Grey */
+  --color-secondary: hsl(200 20% 90%);
+  --color-secondary-foreground: hsl(200 15% 30%);
+
+  /* Muted - Sand */
+  --color-muted: hsl(40 15% 92%);
+  --color-muted-foreground: hsl(200 10% 50%);
+
+  /* Accent - Warm Sand/Gold for highlights */
+  --color-accent: hsl(35 40% 90%);
+  --color-accent-foreground: hsl(200 15% 30%);
+
+  /* Destructive - Soft Coral/Red */
+  --color-destructive: hsl(0 50% 60%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+
+  /* Borders - Soft Sand */
+  --color-border: hsl(200 10% 85%);
+  --color-input: hsl(200 10% 85%);
+  --color-ring: hsl(175 35% 45%);
+
+  /* Sidebar/Navigation - slightly darker sand */
+  --color-sidebar: hsl(40 20% 96%);
+  --color-sidebar-foreground: hsl(200 15% 30%);
+  --color-sidebar-primary: hsl(175 35% 45%);
+  --color-sidebar-primary-foreground: hsl(0 0% 100%);
+  --color-sidebar-accent: hsl(35 40% 85%);
+  --color-sidebar-accent-foreground: hsl(200 15% 30%);
+  --color-sidebar-border: hsl(200 10% 85%);
+  --color-sidebar-ring: hsl(175 35% 45%);
+
+  /* Fonts */
+  --font-sans: 'DM Sans', sans-serif;
+  --font-serif: 'Cormorant Garamond', serif;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-primary;
+  }
+}
